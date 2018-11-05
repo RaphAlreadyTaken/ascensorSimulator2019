@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_exNfwODlEeikXapIvso4oA" name="use case view">
+  <packagedElement xmi:type="uml:Package" xmi:id="_pZFgkODpEeikXapIvso4oA" name="fr">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qZKdgODpEeikXapIvso4oA" name="univ-avignon">
+      <packagedElement xmi:type="uml:Package" xmi:id="_re-2EODpEeikXapIvso4oA" name="m1ilsen">
+        <packagedElement xmi:type="uml:Package" xmi:id="_wFOBYODpEeikXapIvso4oA" name="aa">
+          <packagedElement xmi:type="uml:Package" xmi:id="_26G1kODpEeikXapIvso4oA" name="elevSimMgr">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ERWKMODvEeikXapIvso4oA">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_eZMc0ODvEeikXapIvso4oA">
+                <body>Vocation du système&#xD;
+&#xD;
+C'est cool</body>
+              </ownedComment>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
