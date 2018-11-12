@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_exNfwODlEeikXapIvso4oA" name="use case view">
-  <packagedElement xmi:type="uml:Package" xmi:id="_pZFgkODpEeikXapIvso4oA" name="fr">
-    <packagedElement xmi:type="uml:Package" xmi:id="_qZKdgODpEeikXapIvso4oA" name="univ-avignon">
-      <packagedElement xmi:type="uml:Package" xmi:id="_re-2EODpEeikXapIvso4oA" name="m1ilsen">
-        <packagedElement xmi:type="uml:Package" xmi:id="_wFOBYODpEeikXapIvso4oA" name="aa">
-          <packagedElement xmi:type="uml:Package" xmi:id="_26G1kODpEeikXapIvso4oA" name="elevSimMgr">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ERWKMODvEeikXapIvso4oA">
-              <ownedComment xmi:type="uml:Comment" xmi:id="_eZMc0ODvEeikXapIvso4oA">
-                <body>Vocation du système&#xD;
-&#xD;
-C'est cool</body>
-              </ownedComment>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_do_ScODwEeigVfOfDjzqgw" name="use case view">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_drsBIODwEeigVfOfDjzqgw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_igdXsODwEeigVfOfDjzqgw" name="fr">
+    <packagedElement xmi:type="uml:Package" xmi:id="_jrQW4ODwEeigVfOfDjzqgw" name="univ-avignon">
+      <packagedElement xmi:type="uml:Package" xmi:id="_lsjgQODwEeigVfOfDjzqgw" name="m1ilsen">
+        <packagedElement xmi:type="uml:Package" xmi:id="_uWxeYODwEeigVfOfDjzqgw" name="aa">
+          <packagedElement xmi:type="uml:Package" xmi:id="_wsR9MODwEeigVfOfDjzqgw" name="elevSimMgr" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zU5dcOZPEeixpYOAbdk1pA">
+              <body>Modéliser un système de simulation de gestion d'ascenseur. Le système permettra de simuler le comportement d'un ascenseur lors d'interactions avec ses boutons.&#xD;
+Il permettra également de tester des algorithmes de gestion des priorités lors des appels réalisés pendant la simulation.&#xD;
+Le système de contrôle, fonctionnant selon l'algorithme de priorité aura vocation être directement déployé en situation réelle une fois fonctionnel.</body>
             </ownedComment>
           </packagedElement>
         </packagedElement>
