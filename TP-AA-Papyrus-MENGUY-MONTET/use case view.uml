@@ -9,7 +9,8 @@
         <packagedElement xmi:type="uml:Package" xmi:id="_uWxeYODwEeigVfOfDjzqgw" name="aa">
           <packagedElement xmi:type="uml:Package" xmi:id="_wsR9MODwEeigVfOfDjzqgw" name="elevSimMgr" visibility="public">
             <ownedComment xmi:type="uml:Comment" xmi:id="_zU5dcOZPEeixpYOAbdk1pA">
-              <body>Modéliser un système de simulation de gestion d'ascenseur. Le système permettra de simuler le comportement d'un ascenseur lors d'interactions avec ses boutons.&#xD;
+              <body>Vocation du système&#xD;
+Modéliser un système de simulation de gestion d'ascenseur. Le système permettra de simuler le comportement d'un ascenseur lors d'interactions avec ses boutons.&#xD;
 Il permettra également de tester des algorithmes de gestion des priorités lors des appels réalisés pendant la simulation.&#xD;
 Le système de contrôle, fonctionnant selon l'algorithme de priorité aura vocation être directement déployé en situation réelle une fois fonctionnel.</body>
             </ownedComment>
