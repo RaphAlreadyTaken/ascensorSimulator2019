@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_do_ScODwEeigVfOfDjzqgw" name="use case view">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_do_ScODwEeigVfOfDjzqgw" name="use case view">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_drsBIODwEeigVfOfDjzqgw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -12,8 +12,89 @@
               <body>Vocation du système&#xD;
 Modéliser un système de simulation de gestion d'ascenseur. Le système permettra de simuler le comportement d'un ascenseur lors d'interactions avec ses boutons.&#xD;
 Il permettra également de tester des algorithmes de gestion des priorités lors des appels réalisés pendant la simulation.&#xD;
-Le système de contrôle, fonctionnant selon l'algorithme de priorité aura vocation être directement déployé en situation réelle une fois fonctionnel.</body>
+Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura vocation être directement déployé en situation réelle une fois fonctionnel et optimal.</body>
             </ownedComment>
+            <packagedElement xmi:type="uml:Package" xmi:id="_s5ZtwOZcEeijauhoSHqBng" name="testerUseCase">
+              <packagedElement xmi:type="uml:Actor" xmi:id="_wJjP4OZcEeijauhoSHqBng" name="Tester"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_xEyJEOZcEeijauhoSHqBng" name="Gérer algorithme"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_yESeQOZcEeijauhoSHqBng" name="Lancer simulation"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_1qOqMOZcEeijauhoSHqBng" name="Evaluer simulation"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="__5prkOZcEeijauhoSHqBng" name="Choisir mode d'exécution"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_Bt-I4OZdEeijauhoSHqBng" name="Interagir avec le système"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_DeHQ0OZdEeijauhoSHqBng" name="Choisir mode manuel"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_GgI3YOZdEeijauhoSHqBng" name="Choisir mode automatique"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_vBEvcOZdEeijauhoSHqBng" name="Interagir bouton Monter"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_x0GQsOZdEeijauhoSHqBng" name="Interagir bouton Descendre"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_zsWy0OZdEeijauhoSHqBng" name="Interagir boutons Etage"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_KWXFkOZeEeijauhoSHqBng" name="Interagir "/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_O_Lq0OZeEeijauhoSHqBng" name="Charger scénario"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_21sF0OZeEeijauhoSHqBng" name="Gérer scénario"/>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_TC9M0OZfEeijauhoSHqBng" name="Mode infini"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_ndrdMOZiEeijauhoSHqBng" memberEnd="_ndvHkOZiEeijauhoSHqBng _ndxj0OZiEeijauhoSHqBng">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ndt5cOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nduggOZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_ndvHkOZiEeijauhoSHqBng" name="charger algorithme" type="_xEyJEOZcEeijauhoSHqBng" association="_ndrdMOZiEeijauhoSHqBng"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_ndxj0OZiEeijauhoSHqBng" name="tester" type="_wJjP4OZcEeijauhoSHqBng" association="_ndrdMOZiEeijauhoSHqBng"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oUg-kOZiEeijauhoSHqBng" memberEnd="_oUhlouZiEeijauhoSHqBng _oUhlo-ZiEeijauhoSHqBng">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oUhloOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oUhloeZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_oUhlouZiEeijauhoSHqBng" name="gérer scénario" type="_21sF0OZeEeijauhoSHqBng" association="_oUg-kOZiEeijauhoSHqBng"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_oUhlo-ZiEeijauhoSHqBng" type="_wJjP4OZcEeijauhoSHqBng" association="_oUg-kOZiEeijauhoSHqBng"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_qtK4AOZiEeijauhoSHqBng" memberEnd="_qtLfEOZiEeijauhoSHqBng _qtLfEeZiEeijauhoSHqBng">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qtK4AeZiEeijauhoSHqBng" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qtK4AuZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_qtLfEOZiEeijauhoSHqBng" name="choisir mode d'exécution" type="__5prkOZcEeijauhoSHqBng" association="_qtK4AOZiEeijauhoSHqBng"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_qtLfEeZiEeijauhoSHqBng" type="_wJjP4OZcEeijauhoSHqBng" association="_qtK4AOZiEeijauhoSHqBng"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_sZWF8OZiEeijauhoSHqBng" memberEnd="_sZWtAuZiEeijauhoSHqBng _sZWtA-ZiEeijauhoSHqBng">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sZWtAOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sZWtAeZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_sZWtAuZiEeijauhoSHqBng" name="lancer simulation" type="_yESeQOZcEeijauhoSHqBng" association="_sZWF8OZiEeijauhoSHqBng"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_sZWtA-ZiEeijauhoSHqBng" type="_wJjP4OZcEeijauhoSHqBng" association="_sZWF8OZiEeijauhoSHqBng"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_t-bNYOZiEeijauhoSHqBng" memberEnd="_t-b0cuZiEeijauhoSHqBng _t-b0c-ZiEeijauhoSHqBng">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t-b0cOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t-b0ceZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_t-b0cuZiEeijauhoSHqBng" name="evaluer simulation" type="_1qOqMOZcEeijauhoSHqBng" association="_t-bNYOZiEeijauhoSHqBng"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_t-b0c-ZiEeijauhoSHqBng" type="_sZWF8OZiEeijauhoSHqBng" association="_t-bNYOZiEeijauhoSHqBng"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_7aJWMOZjEeijauhoSHqBng" name="Sequence diagrams">
+              <packagedElement xmi:type="uml:Package" xmi:id="_86z3sOZjEeijauhoSHqBng" name="diagram manageAlgo">
+                <packagedElement xmi:type="uml:Interaction" xmi:id="_HnrDAOZkEeijauhoSHqBng" name="Interaction1">
+                  <lifeline xmi:type="uml:Lifeline" xmi:id="_DWokQOZnEeijauhoSHqBng" name="Testeur" coveredBy="_5rFaEeZoEei2qrKU2AIrfg _46hf0eZoEei2qrKU2AIrfg _46YV4OZoEei2qrKU2AIrfg _Hh8HEOZnEeijauhoSHqBng"/>
+                  <lifeline xmi:type="uml:Lifeline" xmi:id="_KxEVgOZnEeijauhoSHqBng" name="Menu algorithme" coveredBy="_DqZi4eZpEei2qrKU2AIrfg _5rFaEuZoEei2qrKU2AIrfg _OLyI4eZnEeijauhoSHqBng _OLw6wOZnEeijauhoSHqBng"/>
+                  <lifeline xmi:type="uml:Lifeline" xmi:id="__LI-wOZnEeijauhoSHqBng" name="Base de données" coveredBy="_DqZi4uZpEei2qrKU2AIrfg _DGHxIuZpEei2qrKU2AIrfg _DGHxIOZpEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5rFaEeZoEei2qrKU2AIrfg" name="Message13SendEvent" covered="_DWokQOZnEeijauhoSHqBng" message="_5rFaEOZoEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_46YV4OZoEei2qrKU2AIrfg" name="ActionExecutionSpecification10" covered="_DWokQOZnEeijauhoSHqBng" finish="_46hf0eZoEei2qrKU2AIrfg" start="_5rFaEeZoEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DqZi4eZpEei2qrKU2AIrfg" name="Message18SendEvent" covered="_KxEVgOZnEeijauhoSHqBng" message="_DqZi4OZpEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5rFaEuZoEei2qrKU2AIrfg" name="Message13ReceiveEvent" covered="_KxEVgOZnEeijauhoSHqBng" message="_5rFaEOZoEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DqZi4uZpEei2qrKU2AIrfg" name="Message18ReceiveEvent" covered="__LI-wOZnEeijauhoSHqBng" message="_DqZi4OZpEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_DGHxIOZpEei2qrKU2AIrfg" name="ActionExecutionSpecification15" covered="__LI-wOZnEeijauhoSHqBng" finish="_DGHxIuZpEei2qrKU2AIrfg" start="_DqZi4uZpEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_OLyI4eZnEeijauhoSHqBng" name="ActionExecutionSpecification6Finish" covered="_KxEVgOZnEeijauhoSHqBng" execution="_OLw6wOZnEeijauhoSHqBng"/>
+                  <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_46hf0eZoEei2qrKU2AIrfg" name="ActionExecutionSpecification10Finish" covered="_DWokQOZnEeijauhoSHqBng" execution="_46YV4OZoEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_DGHxIuZpEei2qrKU2AIrfg" name="ActionExecutionSpecification15Finish" covered="__LI-wOZnEeijauhoSHqBng" execution="_DGHxIOZpEei2qrKU2AIrfg"/>
+                  <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Hh8HEOZnEeijauhoSHqBng" name="ActionExecutionSpecification2Finish" covered="_DWokQOZnEeijauhoSHqBng"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_OLw6wOZnEeijauhoSHqBng" name="ActionExecutionSpecification6" covered="_KxEVgOZnEeijauhoSHqBng" finish="_OLyI4eZnEeijauhoSHqBng"/>
+                  <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BOuAEOZoEeijauhoSHqBng"/>
+                  <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BOtZAOZoEeijauhoSHqBng"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_BOsx8OZoEeijauhoSHqBng"/>
+                  <message xmi:type="uml:Message" xmi:id="_5rFaEOZoEei2qrKU2AIrfg" name="Ajouter algorithme" receiveEvent="_5rFaEuZoEei2qrKU2AIrfg" sendEvent="_5rFaEeZoEei2qrKU2AIrfg"/>
+                  <message xmi:type="uml:Message" xmi:id="_DqZi4OZpEei2qrKU2AIrfg" name="Insérer dans base" messageSort="asynchCall" receiveEvent="_DqZi4uZpEei2qrKU2AIrfg" sendEvent="_DqZi4eZpEei2qrKU2AIrfg"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_TWR_MOZkEeijauhoSHqBng" name="diagram chooseExecMode"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_YlYhUOZkEeijauhoSHqBng" name="diagram manageScenario"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_dq0KEOZkEeijauhoSHqBng" name="diagram runSimulation"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_bhxZ8OZkEeijauhoSHqBng" name="diagram evaluateScenario"/>
+            </packagedElement>
           </packagedElement>
         </packagedElement>
       </packagedElement>
