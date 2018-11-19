@@ -16,10 +16,8 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
             </ownedComment>
             <packagedElement xmi:type="uml:Package" xmi:id="_s5ZtwOZcEeijauhoSHqBng" name="testerUseCase">
               <packagedElement xmi:type="uml:Actor" xmi:id="_wJjP4OZcEeijauhoSHqBng" name="Tester"/>
-              <packagedElement xmi:type="uml:UseCase" xmi:id="_xEyJEOZcEeijauhoSHqBng" name="Gérer algorithme"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_yESeQOZcEeijauhoSHqBng" name="Lancer simulation"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_1qOqMOZcEeijauhoSHqBng" name="Evaluer simulation"/>
-              <packagedElement xmi:type="uml:UseCase" xmi:id="__5prkOZcEeijauhoSHqBng" name="Choisir mode d'exécution"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_Bt-I4OZdEeijauhoSHqBng" name="Interagir avec le système"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_DeHQ0OZdEeijauhoSHqBng" name="Choisir mode manuel"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_GgI3YOZdEeijauhoSHqBng" name="Choisir mode automatique"/>
@@ -28,29 +26,7 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
               <packagedElement xmi:type="uml:UseCase" xmi:id="_zsWy0OZdEeijauhoSHqBng" name="Interagir boutons Etage"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_KWXFkOZeEeijauhoSHqBng" name="Interagir "/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_O_Lq0OZeEeijauhoSHqBng" name="Charger scénario"/>
-              <packagedElement xmi:type="uml:UseCase" xmi:id="_21sF0OZeEeijauhoSHqBng" name="Gérer scénario"/>
               <packagedElement xmi:type="uml:UseCase" xmi:id="_TC9M0OZfEeijauhoSHqBng" name="Mode infini"/>
-              <packagedElement xmi:type="uml:Association" xmi:id="_ndrdMOZiEeijauhoSHqBng" memberEnd="_ndvHkOZiEeijauhoSHqBng _ndxj0OZiEeijauhoSHqBng">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ndt5cOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nduggOZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
-                </eAnnotations>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_ndvHkOZiEeijauhoSHqBng" name="charger algorithme" type="_xEyJEOZcEeijauhoSHqBng" association="_ndrdMOZiEeijauhoSHqBng"/>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_ndxj0OZiEeijauhoSHqBng" name="tester" type="_wJjP4OZcEeijauhoSHqBng" association="_ndrdMOZiEeijauhoSHqBng"/>
-              </packagedElement>
-              <packagedElement xmi:type="uml:Association" xmi:id="_oUg-kOZiEeijauhoSHqBng" memberEnd="_oUhlouZiEeijauhoSHqBng _oUhlo-ZiEeijauhoSHqBng">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oUhloOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oUhloeZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
-                </eAnnotations>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_oUhlouZiEeijauhoSHqBng" name="gérer scénario" type="_21sF0OZeEeijauhoSHqBng" association="_oUg-kOZiEeijauhoSHqBng"/>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_oUhlo-ZiEeijauhoSHqBng" type="_wJjP4OZcEeijauhoSHqBng" association="_oUg-kOZiEeijauhoSHqBng"/>
-              </packagedElement>
-              <packagedElement xmi:type="uml:Association" xmi:id="_qtK4AOZiEeijauhoSHqBng" memberEnd="_qtLfEOZiEeijauhoSHqBng _qtLfEeZiEeijauhoSHqBng">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qtK4AeZiEeijauhoSHqBng" source="org.eclipse.papyrus">
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qtK4AuZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
-                </eAnnotations>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_qtLfEOZiEeijauhoSHqBng" name="choisir mode d'exécution" type="__5prkOZcEeijauhoSHqBng" association="_qtK4AOZiEeijauhoSHqBng"/>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_qtLfEeZiEeijauhoSHqBng" type="_wJjP4OZcEeijauhoSHqBng" association="_qtK4AOZiEeijauhoSHqBng"/>
-              </packagedElement>
               <packagedElement xmi:type="uml:Association" xmi:id="_sZWF8OZiEeijauhoSHqBng" memberEnd="_sZWtAuZiEeijauhoSHqBng _sZWtA-ZiEeijauhoSHqBng">
                 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sZWtAOZiEeijauhoSHqBng" source="org.eclipse.papyrus">
                   <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sZWtAeZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
@@ -63,7 +39,15 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
                   <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t-b0ceZiEeijauhoSHqBng" key="nature" value="UML_Nature"/>
                 </eAnnotations>
                 <ownedEnd xmi:type="uml:Property" xmi:id="_t-b0cuZiEeijauhoSHqBng" name="evaluer simulation" type="_1qOqMOZcEeijauhoSHqBng" association="_t-bNYOZiEeijauhoSHqBng"/>
-                <ownedEnd xmi:type="uml:Property" xmi:id="_t-b0c-ZiEeijauhoSHqBng" type="_sZWF8OZiEeijauhoSHqBng" association="_t-bNYOZiEeijauhoSHqBng"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_t-b0c-ZiEeijauhoSHqBng" type="_wJjP4OZcEeijauhoSHqBng" association="_t-bNYOZiEeijauhoSHqBng"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_rXkqMOvkEeiwyPoDJr2Hvw" name="Configurer simulation"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_vvRqQOvkEeiwyPoDJr2Hvw" memberEnd="_vvUGgOvkEeiwyPoDJr2Hvw _vvUtkOvkEeiwyPoDJr2Hvw">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vvS4YOvkEeiwyPoDJr2Hvw" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vvS4YevkEeiwyPoDJr2Hvw" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_vvUGgOvkEeiwyPoDJr2Hvw" name="configurer simulation" type="_rXkqMOvkEeiwyPoDJr2Hvw" association="_vvRqQOvkEeiwyPoDJr2Hvw"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_vvUtkOvkEeiwyPoDJr2Hvw" type="_wJjP4OZcEeijauhoSHqBng" association="_vvRqQOvkEeiwyPoDJr2Hvw"/>
               </packagedElement>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_7aJWMOZjEeijauhoSHqBng" name="Sequence diagrams">
@@ -136,12 +120,15 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
               <packagedElement xmi:type="uml:Package" xmi:id="_bhxZ8OZkEeijauhoSHqBng" name="diagram evaluateScenario"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_WLnq0OvZEeik4PS6qqRnmg" name="Package diagram">
-              <packagedElement xmi:type="uml:Package" xmi:id="_akdTUOvZEeik4PS6qqRnmg" name="Simulation"/>
-              <packagedElement xmi:type="uml:Package" xmi:id="_GWav4OvdEeik4PS6qqRnmg" name="Gérer algo"/>
-              <packagedElement xmi:type="uml:Package" xmi:id="_PaibwOvdEeik4PS6qqRnmg" name="Gérer scénario"/>
-              <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Choisir mode d'exécution"/>
-              <packagedElement xmi:type="uml:Package" xmi:id="_U_ZygOvdEeik4PS6qqRnmg" name="Lancer simulation"/>
-              <packagedElement xmi:type="uml:Package" xmi:id="_W7GDIOvdEeik4PS6qqRnmg" name="Evaluer simulation"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_akdTUOvZEeik4PS6qqRnmg" name="Configuration">
+                <packagedElement xmi:type="uml:Package" xmi:id="_PaibwOvdEeik4PS6qqRnmg" name="Gestion scénario"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_GWav4OvdEeik4PS6qqRnmg" name="Gestion algorithme"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Choix mode d'exécution"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_U_ZygOvdEeik4PS6qqRnmg" name="Simulation">
+                <packagedElement xmi:type="uml:Dependency" xmi:id="_XKDA8OvkEeiwyPoDJr2Hvw" name="includes" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_akdTUOvZEeik4PS6qqRnmg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_W7GDIOvdEeik4PS6qqRnmg" name="Evaluation"/>
             </packagedElement>
           </packagedElement>
         </packagedElement>
