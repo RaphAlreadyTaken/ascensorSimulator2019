@@ -49,6 +49,9 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
                 <ownedEnd xmi:type="uml:Property" xmi:id="_vvUGgOvkEeiwyPoDJr2Hvw" name="configurer simulation" type="_rXkqMOvkEeiwyPoDJr2Hvw" association="_vvRqQOvkEeiwyPoDJr2Hvw"/>
                 <ownedEnd xmi:type="uml:Property" xmi:id="_vvUtkOvkEeiwyPoDJr2Hvw" type="_wJjP4OZcEeijauhoSHqBng" association="_vvRqQOvkEeiwyPoDJr2Hvw"/>
               </packagedElement>
+              <packagedElement xmi:type="uml:UseCase" xmi:id="_qEyaYOvpEeiwyPoDJr2Hvw" name="Interagir avec simulation"/>
+              <packagedElement xmi:type="uml:Dependency" xmi:id="_ybBFgOvpEeiwyPoDJr2Hvw" name="&lt;&lt; requires >>" client="_qEyaYOvpEeiwyPoDJr2Hvw" supplier="_yESeQOZcEeijauhoSHqBng"/>
+              <packagedElement xmi:type="uml:Dependency" xmi:id="__Ip1wOvpEeiwyPoDJr2Hvw" name="&lt;&lt; requires >>" client="_yESeQOZcEeijauhoSHqBng" supplier="_rXkqMOvkEeiwyPoDJr2Hvw"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_7aJWMOZjEeijauhoSHqBng" name="Sequence diagrams">
               <packagedElement xmi:type="uml:Package" xmi:id="_86z3sOZjEeijauhoSHqBng" name="diagram manageAlgo">
@@ -122,11 +125,24 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
             <packagedElement xmi:type="uml:Package" xmi:id="_WLnq0OvZEeik4PS6qqRnmg" name="Package diagram">
               <packagedElement xmi:type="uml:Package" xmi:id="_akdTUOvZEeik4PS6qqRnmg" name="Configuration">
                 <packagedElement xmi:type="uml:Package" xmi:id="_PaibwOvdEeik4PS6qqRnmg" name="Gestion scénario"/>
-                <packagedElement xmi:type="uml:Package" xmi:id="_GWav4OvdEeik4PS6qqRnmg" name="Gestion algorithme"/>
-                <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Choix mode d'exécution"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_GWav4OvdEeik4PS6qqRnmg" name="Gestion algorithme">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_zgm3wOvtEeiwyPoDJr2Hvw">
+                    <body>Vocation du sous-système:&#xD;
+&#xD;
+Permettre d'effectuer des opérations relatives à l'algorithme choisi:&#xD;
+- Créer un algorithme dans le système à partir d'une source externe&#xD;
+- Modifier un algorithme existant dans le système&#xD;
+- Supprimer un algorithme existant dans le système&#xD;
+- Charger un algorithme existant </body>
+                  </ownedComment>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Gestion exécution"/>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_U_ZygOvdEeik4PS6qqRnmg" name="Simulation">
-                <packagedElement xmi:type="uml:Dependency" xmi:id="_XKDA8OvkEeiwyPoDJr2Hvw" name="includes" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_akdTUOvZEeik4PS6qqRnmg"/>
+                <packagedElement xmi:type="uml:Dependency" xmi:id="_XKDA8OvkEeiwyPoDJr2Hvw" name="uses" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_akdTUOvZEeik4PS6qqRnmg"/>
+                <packagedElement xmi:type="uml:Dependency" xmi:id="_hcT-IOvoEeiwyPoDJr2Hvw" name="feeds" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_W7GDIOvdEeik4PS6qqRnmg"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_XaUfUOvpEeiwyPoDJr2Hvw" name="Interaction simulation"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_h6jnEOvtEeiwyPoDJr2Hvw" name="Gestion simulation"/>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_W7GDIOvdEeik4PS6qqRnmg" name="Evaluation"/>
             </packagedElement>
