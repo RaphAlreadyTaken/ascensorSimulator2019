@@ -125,27 +125,69 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_WLnq0OvZEeik4PS6qqRnmg" name="Package diagram">
               <packagedElement xmi:type="uml:Package" xmi:id="_akdTUOvZEeik4PS6qqRnmg" name="Configuration">
-                <packagedElement xmi:type="uml:Package" xmi:id="_PaibwOvdEeik4PS6qqRnmg" name="Gestion scénario"/>
+                <ownedComment xmi:type="uml:Comment" xmi:id="_nGkVEACKEemgbNU2uOuYPg">
+                  <body></body>
+                </ownedComment>
+                <packagedElement xmi:type="uml:Package" xmi:id="_PaibwOvdEeik4PS6qqRnmg" name="Gestion scénario">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_4SO6YACLEemgbNU2uOuYPg">
+                    <body>Vocation gestion des scénarios&#xD;
+&#xD;
+Par défaut, un certain nombre de scénarios seront présent dans l'application. &#xD;
+Il sera également possible à l'utilisateur de créer ses propres scénarios. Il pourra par la suite les modifier ou les supprimer à sa convenance.&#xD;
+Dans cette partie, l'utilisateur choisira quel le scénario qu'il souhaitera éxécuter lors de la simuation.</body>
+                  </ownedComment>
+                </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_GWav4OvdEeik4PS6qqRnmg" name="Gestion algorithme">
                   <ownedComment xmi:type="uml:Comment" xmi:id="_zgm3wOvtEeiwyPoDJr2Hvw">
-                    <body>Vocation du sous-système:&#xD;
+                    <body>Vocation gestion des algorithmes&#xD;
 &#xD;
-Permettre d'effectuer des opérations relatives à l'algorithme choisi:&#xD;
-- Créer un algorithme dans le système à partir d'une source externe&#xD;
+Ce sous sytème permettra d'effectuer des opérations relatives à l'algorithme choisi:&#xD;
+- Insérer un algorithme dans le système à partir d'une source externe&#xD;
 - Modifier un algorithme existant dans le système&#xD;
 - Supprimer un algorithme existant dans le système&#xD;
 - Charger un algorithme existant </body>
                   </ownedComment>
                 </packagedElement>
-                <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Gestion exécution"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Gestion exécution">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_siGh8ACQEemgbNU2uOuYPg">
+                    <body>Vocation gestion de l'execution&#xD;
+&#xD;
+Ceci permettra à l'utilisateur de choisir le mode d'éxecution de la simulation. 2 modes seront présents:&#xD;
+ - Mode manuel: permet d'intéragir en direct avec l'ascenseur. (Voir sous-système &quot;Interaction simulation)&#xD;
+ - Mode automatique: necessite le chargement d'un scénario. Celui-ci execute le scénario choisi </body>
+                  </ownedComment>
+                </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_U_ZygOvdEeik4PS6qqRnmg" name="Simulation">
                 <packagedElement xmi:type="uml:Dependency" xmi:id="_XKDA8OvkEeiwyPoDJr2Hvw" name="uses" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_akdTUOvZEeik4PS6qqRnmg"/>
                 <packagedElement xmi:type="uml:Dependency" xmi:id="_hcT-IOvoEeiwyPoDJr2Hvw" name="feeds" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_W7GDIOvdEeik4PS6qqRnmg"/>
-                <packagedElement xmi:type="uml:Package" xmi:id="_XaUfUOvpEeiwyPoDJr2Hvw" name="Interaction simulation"/>
-                <packagedElement xmi:type="uml:Package" xmi:id="_h6jnEOvtEeiwyPoDJr2Hvw" name="Gestion simulation"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_XaUfUOvpEeiwyPoDJr2Hvw" name="Interaction simulation">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_hGoSQACSEemgbNU2uOuYPg">
+                    <body>Vocation interaction avec la simulation&#xD;
+&#xD;
+Permet à l'utilisateur d'intéragir en direct avec la simulation pendant que celle-ci est en train de s'executer (mode manuel uniquement).&#xD;
+Ce sous-sytème sera représenté par un ensemble de boutons permettant de  faire monter/descendre/choisir un étage/s'arrêter l'ascenseur.</body>
+                  </ownedComment>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_h6jnEOvtEeiwyPoDJr2Hvw" name="Gestion simulation">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_h9fBwACSEemgbNU2uOuYPg">
+                    <body>Vocation gestion simulation&#xD;
+&#xD;
+Ceci permettra de choisir le mode de simulation. Deux modes seront présents:&#xD;
+ - Mode graphique: affiche toutes les actions du système graphiquement (avec animations). Possibilité de choisir la vitesse d'exection (accélerer/ralentir)&#xD;
+ - Mode headless: affichement seulement les resulats d'execution de la simulation. Permet de gagner en temps.&#xD;
+&#xD;
+Permettra également de mettre en pause la simulation (et ainsi de pouvoir la reprendre), ou bien de la stopper complètement.</body>
+                  </ownedComment>
+                </packagedElement>
               </packagedElement>
-              <packagedElement xmi:type="uml:Package" xmi:id="_W7GDIOvdEeik4PS6qqRnmg" name="Evaluation"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_W7GDIOvdEeik4PS6qqRnmg" name="Evaluation">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_bvtmAACUEemgbNU2uOuYPg">
+                  <body>Vocation evaluation&#xD;
+&#xD;
+</body>
+                </ownedComment>
+              </packagedElement>
             </packagedElement>
           </packagedElement>
         </packagedElement>
