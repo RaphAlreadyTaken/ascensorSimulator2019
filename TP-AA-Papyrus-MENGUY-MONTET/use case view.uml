@@ -67,8 +67,8 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_b5JzoOZuEeiDEKfZqhGTiw" name="Message16SendEvent" covered="_216KcOZtEeiDEKfZqhGTiw" message="_b5JMkOZuEeiDEKfZqhGTiw"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_b5KasOZuEeiDEKfZqhGTiw" name="Message16ReceiveEvent" covered="__qVNcOZtEeiDEKfZqhGTiw" message="_b5JMkOZuEeiDEKfZqhGTiw"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_20apUOvWEeik4PS6qqRnmg" name="ActionExecutionSpecification50" covered="__qVNcOZtEeiDEKfZqhGTiw" finish="_6eYggACZEemm9ccc8W84Qg" start="_b5KasOZuEeiDEKfZqhGTiw"/>
-                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6eYggACZEemm9ccc8W84Qg" name="Message55SendEvent" covered="__qVNcOZtEeiDEKfZqhGTiw" message="_6eUPEACZEemm9ccc8W84Qg"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6eZHkACZEemm9ccc8W84Qg" name="Message55ReceiveEvent" covered="_1gIDQOZtEeiDEKfZqhGTiw" message="_6eUPEACZEemm9ccc8W84Qg"/>
+                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6eYggACZEemm9ccc8W84Qg" name="Message55SendEvent" covered="__qVNcOZtEeiDEKfZqhGTiw" message="_6eUPEACZEemm9ccc8W84Qg"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jvk9UeZuEeiDEKfZqhGTiw" name="Message23SendEvent" covered="_1gIDQOZtEeiDEKfZqhGTiw" message="_jvk9UOZuEeiDEKfZqhGTiw"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_gVbKoOZuEeiDEKfZqhGTiw" name="ActionExecutionSpecification17" covered="_1gIDQOZtEeiDEKfZqhGTiw" finish="_RzjQIACaEemm9ccc8W84Qg" start="_jvk9UeZuEeiDEKfZqhGTiw"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jvlkYOZuEeiDEKfZqhGTiw" name="Message23ReceiveEvent" covered="_216KcOZtEeiDEKfZqhGTiw" message="_jvk9UOZuEeiDEKfZqhGTiw"/>
@@ -76,8 +76,8 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UTcTIOvXEeik4PS6qqRnmg" name="Message54SendEvent" covered="_216KcOZtEeiDEKfZqhGTiw" message="_UTbsEOvXEeik4PS6qqRnmg"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UTcTIevXEeik4PS6qqRnmg" name="Message54ReceiveEvent" covered="__qVNcOZtEeiDEKfZqhGTiw" message="_UTbsEOvXEeik4PS6qqRnmg"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_RdlgUOvXEeik4PS6qqRnmg" name="ActionExecutionSpecification51" covered="__qVNcOZtEeiDEKfZqhGTiw" finish="_RzipEACaEemm9ccc8W84Qg" start="_UTcTIevXEeik4PS6qqRnmg"/>
-                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RzipEACaEemm9ccc8W84Qg" name="Message56SendEvent" covered="__qVNcOZtEeiDEKfZqhGTiw" message="_RziCAACaEemm9ccc8W84Qg"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RzjQIACaEemm9ccc8W84Qg" name="Message56ReceiveEvent" covered="_1gIDQOZtEeiDEKfZqhGTiw" message="_RziCAACaEemm9ccc8W84Qg"/>
+                  <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RzipEACaEemm9ccc8W84Qg" name="Message56SendEvent" covered="__qVNcOZtEeiDEKfZqhGTiw" message="_RziCAACaEemm9ccc8W84Qg"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t6cO0OZuEeiDEKfZqhGTiw" name="Message37SendEvent" covered="_1gIDQOZtEeiDEKfZqhGTiw" message="_t6bnwOZuEeiDEKfZqhGTiw"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_rN5wEOZuEeiDEKfZqhGTiw" name="ActionExecutionSpecification28" covered="_1gIDQOZtEeiDEKfZqhGTiw" finish="_V-u3IQCaEemm9ccc8W84Qg" start="_t6cO0OZuEeiDEKfZqhGTiw"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t6cO0eZuEeiDEKfZqhGTiw" name="Message37ReceiveEvent" covered="_216KcOZtEeiDEKfZqhGTiw" message="_t6bnwOZuEeiDEKfZqhGTiw"/>
@@ -156,15 +156,15 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vdTHwQCQEemvu7j8aEqU6A" name="Message13ReceiveEvent" covered="_30XyUACOEemvu7j8aEqU6A" message="_vdR5oACQEemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_w-B6sQCQEemvu7j8aEqU6A" name="ActionExecutionSpecification15Finish" covered="_UcYfIACQEemvu7j8aEqU6A" execution="_w-AskACQEemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MnX1QACREemvu7j8aEqU6A" name="Message27SendEvent" covered="_30XyUACOEemvu7j8aEqU6A" message="_MnXOMACREemvu7j8aEqU6A"/>
-                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_HS1HkACTEemvu7j8aEqU6A" name="ActionExecutionSpecification21" start="_MnX1QACREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_5TxdoACQEemvu7j8aEqU6A" name="ActionExecutionSpecification21" covered="_30XyUACOEemvu7j8aEqU6A" finish="_5TyrwQCQEemvu7j8aEqU6A" start="_MnX1QACREemvu7j8aEqU6A"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_HS1HkACTEemvu7j8aEqU6A" name="ActionExecutionSpecification21" start="_MnX1QACREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MnYcUACREemvu7j8aEqU6A" name="Message27ReceiveEvent" covered="_4-YuYACOEemvu7j8aEqU6A" message="_MnXOMACREemvu7j8aEqU6A"/>
-                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_GCHGkACTEemvu7j8aEqU6A" name="ActionExecutionSpecification24" finish="_bBO2wACREemvu7j8aEqU6A" start="_MnYcUACREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_IPP-cACREemvu7j8aEqU6A" name="ActionExecutionSpecification24" covered="_4-YuYACOEemvu7j8aEqU6A" finish="_bBO2wACREemvu7j8aEqU6A" start="_MnYcUACREemvu7j8aEqU6A"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_GCHGkACTEemvu7j8aEqU6A" name="ActionExecutionSpecification24" finish="_bBO2wACREemvu7j8aEqU6A" start="_MnYcUACREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bBO2wACREemvu7j8aEqU6A" name="Message31SendEvent" covered="_4-YuYACOEemvu7j8aEqU6A" message="_bBNooACREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bBO2wQCREemvu7j8aEqU6A" name="Message31ReceiveEvent" covered="_UcYfIACQEemvu7j8aEqU6A" message="_bBNooACREemvu7j8aEqU6A"/>
-                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_FF1rkACTEemvu7j8aEqU6A" name="ActionExecutionSpecification28" start="_bBO2wQCREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_adAIUACREemvu7j8aEqU6A" name="ActionExecutionSpecification28" covered="_UcYfIACQEemvu7j8aEqU6A" finish="_adB9gACREemvu7j8aEqU6A" start="_bBO2wQCREemvu7j8aEqU6A"/>
+                  <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_FF1rkACTEemvu7j8aEqU6A" name="ActionExecutionSpecification28" start="_bBO2wQCREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5TyrwQCQEemvu7j8aEqU6A" name="ActionExecutionSpecification21Finish" covered="_30XyUACOEemvu7j8aEqU6A" execution="_5TxdoACQEemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_adB9gACREemvu7j8aEqU6A" name="ActionExecutionSpecification28Finish" covered="_UcYfIACQEemvu7j8aEqU6A" execution="_adAIUACREemvu7j8aEqU6A"/>
                   <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AEEQQACSEemvu7j8aEqU6A" name="Message38SendEvent" covered="_30XyUACOEemvu7j8aEqU6A" message="_AEDCIACSEemvu7j8aEqU6A"/>
@@ -218,6 +218,17 @@ Par défaut, un certain nombre de scénarios seront présent dans l'application.
 Il sera également possible à l'utilisateur de créer ses propres scénarios. Il pourra par la suite les modifier ou les supprimer à sa convenance.&#xD;
 Dans cette partie, l'utilisateur choisira quel le scénario qu'il souhaitera éxécuter lors de la simuation.</body>
                   </ownedComment>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_QeM54ACyEemgbNU2uOuYPg" name="scenarioUseCase">
+                    <packagedElement xmi:type="uml:Actor" xmi:id="_YlDsQACyEemgbNU2uOuYPg" name="Tester"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_aRGXUACyEemgbNU2uOuYPg" name="Créer scénario"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_Xlmk8ACzEemgbNU2uOuYPg" name="Supprimer scénario"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_cMuhEACzEemgbNU2uOuYPg" name="Modifier scénario"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_fynpsACzEemgbNU2uOuYPg" name="Choisir scénario"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_i-K_sACzEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_kWQ0AACzEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_nVaFsACzEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_p4qsoACzEemgbNU2uOuYPg"/>
+                  </packagedElement>
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_GWav4OvdEeik4PS6qqRnmg" name="Gestion algorithme">
                   <ownedComment xmi:type="uml:Comment" xmi:id="_zgm3wOvtEeiwyPoDJr2Hvw">
@@ -229,6 +240,17 @@ Ce sous sytème permettra d'effectuer des opérations relatives à l'algorithme 
 - Supprimer un algorithme existant dans le système&#xD;
 - Charger un algorithme existant </body>
                   </ownedComment>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_ysPbEACzEemgbNU2uOuYPg" name="algoUseCase">
+                    <packagedElement xmi:type="uml:Actor" xmi:id="_2FwUkACzEemgbNU2uOuYPg" name="Tester"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_5bmPAACzEemgbNU2uOuYPg" name="Insérer algorithme"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_-LSRQACzEemgbNU2uOuYPg" name="Modifier algorithme"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_COgPEAC0EemgbNU2uOuYPg" name="Supprimer algorithme"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_EWMUUAC0EemgbNU2uOuYPg" name="Charger algorithme"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_Mkl5IAC0EemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_N6bDoAC0EemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_PXmMQAC0EemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_StLoAAC0EemgbNU2uOuYPg"/>
+                  </packagedElement>
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_Stn9IOvdEeik4PS6qqRnmg" name="Gestion exécution">
                   <ownedComment xmi:type="uml:Comment" xmi:id="_siGh8ACQEemgbNU2uOuYPg">
@@ -238,6 +260,11 @@ Ceci permettra à l'utilisateur de choisir le mode d'éxecution de la simulation
  - Mode manuel: permet d'intéragir en direct avec l'ascenseur. (Voir sous-système &quot;Interaction simulation)&#xD;
  - Mode automatique: necessite le chargement d'un scénario. Celui-ci execute le scénario choisi </body>
                   </ownedComment>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_awFHcAC0EemgbNU2uOuYPg" name="executionUseCase">
+                    <packagedElement xmi:type="uml:Actor" xmi:id="_iud6UAC0EemgbNU2uOuYPg" name="Tester"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_kDgaoAC0EemgbNU2uOuYPg" name="Choix mode d'execution"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_o0lkAAC0EemgbNU2uOuYPg"/>
+                  </packagedElement>
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_M0bDsACaEemgbNU2uOuYPg" name="configurationUseCase">
                   <packagedElement xmi:type="uml:Actor" xmi:id="_SwsN0ACaEemgbNU2uOuYPg" name="Tester"/>
