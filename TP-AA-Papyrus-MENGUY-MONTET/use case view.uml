@@ -210,9 +210,6 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_WLnq0OvZEeik4PS6qqRnmg" name="Package diagram">
               <packagedElement xmi:type="uml:Package" xmi:id="_akdTUOvZEeik4PS6qqRnmg" name="Configuration">
-                <ownedComment xmi:type="uml:Comment" xmi:id="_nGkVEACKEemgbNU2uOuYPg">
-                  <body></body>
-                </ownedComment>
                 <packagedElement xmi:type="uml:Package" xmi:id="_PaibwOvdEeik4PS6qqRnmg" name="Gestion scénario">
                   <ownedComment xmi:type="uml:Comment" xmi:id="_4SO6YACLEemgbNU2uOuYPg">
                     <body>Vocation gestion des scénarios&#xD;
@@ -242,6 +239,15 @@ Ceci permettra à l'utilisateur de choisir le mode d'éxecution de la simulation
  - Mode automatique: necessite le chargement d'un scénario. Celui-ci execute le scénario choisi </body>
                   </ownedComment>
                 </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_M0bDsACaEemgbNU2uOuYPg" name="configurationUseCase">
+                  <packagedElement xmi:type="uml:Actor" xmi:id="_SwsN0ACaEemgbNU2uOuYPg" name="Tester"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_THHJwACaEemgbNU2uOuYPg" name="Gérer scénarios"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_VVqE8ACaEemgbNU2uOuYPg" name="Gérer algorithmes"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_XVdZgACaEemgbNU2uOuYPg" name="Gérer execution"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_aVKE0ACaEemgbNU2uOuYPg"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_bD_gwACaEemgbNU2uOuYPg"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_dCIBYACaEemgbNU2uOuYPg"/>
+                </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_U_ZygOvdEeik4PS6qqRnmg" name="Simulation">
                 <packagedElement xmi:type="uml:Dependency" xmi:id="_XKDA8OvkEeiwyPoDJr2Hvw" name="uses" client="_U_ZygOvdEeik4PS6qqRnmg" supplier="_akdTUOvZEeik4PS6qqRnmg"/>
@@ -265,6 +271,13 @@ Ceci permettra de choisir le mode de simulation. Deux modes seront présents:&#x
 Permettra également de mettre en pause la simulation (et ainsi de pouvoir la reprendre), ou bien de la stopper complètement.</body>
                   </ownedComment>
                 </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_emQtoACaEemgbNU2uOuYPg" name="simulationUseCase">
+                  <packagedElement xmi:type="uml:Actor" xmi:id="_kdPIEACaEemgbNU2uOuYPg" name="Tester"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_kybU8ACaEemgbNU2uOuYPg" name="Intéragir avec la simulation"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_lDnLkACaEemgbNU2uOuYPg" name="Gérer la simulation"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_slBHgACaEemgbNU2uOuYPg"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_tnkwsACaEemgbNU2uOuYPg"/>
+                </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_W7GDIOvdEeik4PS6qqRnmg" name="Evaluation">
                 <ownedComment xmi:type="uml:Comment" xmi:id="_bvtmAACUEemgbNU2uOuYPg">
@@ -272,6 +285,15 @@ Permettra également de mettre en pause la simulation (et ainsi de pouvoir la re
 &#xD;
 </body>
                 </ownedComment>
+                <packagedElement xmi:type="uml:Package" xmi:id="_u8kNsACaEemgbNU2uOuYPg" name="evaluationUseCase">
+                  <packagedElement xmi:type="uml:Actor" xmi:id="_yiqxsACaEemgbNU2uOuYPg" name="Tester"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_y5sxoACaEemgbNU2uOuYPg" name="Observer les résultats"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_1XMHwACaEemgbNU2uOuYPg" name="Sauvegarder les résulats"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_3b_REACaEemgbNU2uOuYPg" name="Comparer les résultats"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_7kDSoACaEemgbNU2uOuYPg"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_8K0-wACaEemgbNU2uOuYPg"/>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_8w3EAACaEemgbNU2uOuYPg"/>
+                </packagedElement>
               </packagedElement>
             </packagedElement>
           </packagedElement>
