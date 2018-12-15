@@ -260,17 +260,40 @@ Ceci permettra à l'utilisateur de choisir le mode d'éxecution de la simulation
 Permet à l'utilisateur d'intéragir en direct avec la simulation pendant que celle-ci est en train de s'executer (mode manuel uniquement).&#xD;
 Ce sous-sytème sera représenté par un ensemble de boutons permettant de  faire monter/descendre/choisir un étage/s'arrêter l'ascenseur.</body>
                   </ownedComment>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_UlFecACsEemgbNU2uOuYPg" name="interactionUseCase">
+                    <packagedElement xmi:type="uml:Actor" xmi:id="_3AEr8ACsEemgbNU2uOuYPg" name="Tester"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_CQ3qwACtEemgbNU2uOuYPg" name="Faire monter ascenseur"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_zdKwcACtEemgbNU2uOuYPg" name="Faire descendre ascenseur"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_3GNTsACtEemgbNU2uOuYPg" name="Choisir un étage"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_502EMACtEemgbNU2uOuYPg" name="Arrêter l'ascenseur"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_-liMAACtEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="__QGL8ACtEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_A_UG0ACuEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="_Ccf2gACuEemgbNU2uOuYPg"/>
+                  </packagedElement>
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_h6jnEOvtEeiwyPoDJr2Hvw" name="Gestion simulation">
                   <ownedComment xmi:type="uml:Comment" xmi:id="_h9fBwACSEemgbNU2uOuYPg">
                     <body>Vocation gestion simulation&#xD;
 &#xD;
-Ceci permettra de choisir le mode de simulation. Deux modes seront présents:&#xD;
+Ceci permettra de choisir le mode de lancement de la simulation. Deux modes seront présents:&#xD;
  - Mode graphique: affiche toutes les actions du système graphiquement (avec animations). Possibilité de choisir la vitesse d'exection (accélerer/ralentir)&#xD;
  - Mode headless: affichement seulement les resulats d'execution de la simulation. Permet de gagner en temps.&#xD;
 &#xD;
+Lors du lancement&#xD;
 Permettra également de mettre en pause la simulation (et ainsi de pouvoir la reprendre), ou bien de la stopper complètement.</body>
                   </ownedComment>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_E3sGkACuEemgbNU2uOuYPg" name="gestionUseCase">
+                    <packagedElement xmi:type="uml:Actor" xmi:id="_OrSHkACuEemgbNU2uOuYPg" name="Tester"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZMZV4ACuEemgbNU2uOuYPg" name="Choix mode de lancement simulation"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_icyjMACuEemgbNU2uOuYPg" name="Mettre en pause la simulation"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_lViR8ACuEemgbNU2uOuYPg" name="Reprendre la simulation"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_naa60ACuEemgbNU2uOuYPg" name="Arrêter la simulation"/>
+                    <packagedElement xmi:type="uml:Dependency" xmi:id="_21kaMACuEemgbNU2uOuYPg" name="Requires" client="_icyjMACuEemgbNU2uOuYPg" supplier="_ZMZV4ACuEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Dependency" xmi:id="_5elq4ACuEemgbNU2uOuYPg" name="Requires" client="_lViR8ACuEemgbNU2uOuYPg" supplier="_E3sGkACuEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Dependency" xmi:id="_8ew3UACuEemgbNU2uOuYPg" name="Requires" client="_naa60ACuEemgbNU2uOuYPg" supplier="_ZMZV4ACuEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:Association" xmi:id="__SpUMACuEemgbNU2uOuYPg"/>
+                  </packagedElement>
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_emQtoACaEemgbNU2uOuYPg" name="simulationUseCase">
                   <packagedElement xmi:type="uml:Actor" xmi:id="_kdPIEACaEemgbNU2uOuYPg" name="Tester"/>
@@ -284,7 +307,7 @@ Permettra également de mettre en pause la simulation (et ainsi de pouvoir la re
                 <ownedComment xmi:type="uml:Comment" xmi:id="_bvtmAACUEemgbNU2uOuYPg">
                   <body>Vocation evaluation&#xD;
 &#xD;
-</body>
+Permettra à l'utilisateur d'observer lse résultats de la simulation. Ceux-ci seront sauvegardés et il aura également la possibilité de les comparer avec des résultats obtenus lors de précédentes simulations.</body>
                 </ownedComment>
                 <packagedElement xmi:type="uml:Package" xmi:id="_u8kNsACaEemgbNU2uOuYPg" name="evaluationUseCase">
                   <packagedElement xmi:type="uml:Actor" xmi:id="_yiqxsACaEemgbNU2uOuYPg" name="Tester"/>
