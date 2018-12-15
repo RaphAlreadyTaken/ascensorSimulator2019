@@ -52,6 +52,7 @@ Le système de contrôle, fonctionnant selon l'algorithme de priorité, aura voc
               <packagedElement xmi:type="uml:UseCase" xmi:id="_qEyaYOvpEeiwyPoDJr2Hvw" name="Interagir avec simulation"/>
               <packagedElement xmi:type="uml:Dependency" xmi:id="_ybBFgOvpEeiwyPoDJr2Hvw" name="&lt;&lt; requires >>" client="_qEyaYOvpEeiwyPoDJr2Hvw" supplier="_yESeQOZcEeijauhoSHqBng"/>
               <packagedElement xmi:type="uml:Dependency" xmi:id="__Ip1wOvpEeiwyPoDJr2Hvw" name="&lt;&lt; requires >>" client="_yESeQOZcEeijauhoSHqBng" supplier="_rXkqMOvkEeiwyPoDJr2Hvw"/>
+              <packagedElement xmi:type="uml:Dependency" xmi:id="_Mpz_4AB-Eemvu7j8aEqU6A" name="&lt;&lt; requires >>" client="_1qOqMOZcEeijauhoSHqBng" supplier="_yESeQOZcEeijauhoSHqBng"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_7aJWMOZjEeijauhoSHqBng" name="Sequence diagrams">
               <packagedElement xmi:type="uml:Package" xmi:id="_86z3sOZjEeijauhoSHqBng" name="diagram manageAlgo">

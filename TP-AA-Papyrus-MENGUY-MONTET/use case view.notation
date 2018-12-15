@@ -148,6 +148,19 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__I5tYOvpEeiwyPoDJr2Hvw" id="(0.5,0.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__I5tYevpEeiwyPoDJr2Hvw" id="(0.4968944099378882,1.0)"/>
     </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Mp-_AAB-Eemvu7j8aEqU6A" type="Dependency_Edge" source="_1qP4UOZcEeijauhoSHqBng" target="_yETsYOZcEeijauhoSHqBng">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MqDQcAB-Eemvu7j8aEqU6A" type="Dependency_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MqDQcQB-Eemvu7j8aEqU6A" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_MqDQcgB-Eemvu7j8aEqU6A" type="Dependency_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MqDQcwB-Eemvu7j8aEqU6A" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Mp-_AQB-Eemvu7j8aEqU6A"/>
+      <element xmi:type="uml:Dependency" href="use%20case%20view.uml#_Mpz_4AB-Eemvu7j8aEqU6A"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mp-_AgB-Eemvu7j8aEqU6A" points="[320, 300, -643984, -643984]$[320, 240, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mqn4MAB-Eemvu7j8aEqU6A" id="(0.5,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mqn4MQB-Eemvu7j8aEqU6A" id="(0.5,1.0)"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_IwYXgOZkEeijauhoSHqBng" type="PapyrusUMLSequenceDiagram" name="algoManagement" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_IwYXgeZkEeijauhoSHqBng" type="Interaction_Shape">
