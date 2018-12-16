@@ -79,7 +79,7 @@
               <packagedElement xmi:type="uml:Package" xmi:id="_ffXfEADKEemgbNU2uOuYPg" name="implementation">
                 <packagedElement xmi:type="uml:Class" xmi:id="_kIAnsADWEemgbNU2uOuYPg" name="Capteur">
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_7QFWgADWEemgbNU2uOuYPg" name="etat" visibility="private" type="_D4ZFkADWEemgbNU2uOuYPg"/>
-                  <ownedAttribute xmi:type="uml:Property" xmi:id="_HSEsQADYEemgbNU2uOuYPg" name="positon" visibility="private">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_HSEsQADYEemgbNU2uOuYPg" name="position" visibility="private">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
                   </ownedAttribute>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_-FSCAADWEemgbNU2uOuYPg" name="setState">
@@ -90,51 +90,114 @@
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_yEMk0ADNEemgbNU2uOuYPg" name="stateAscenseur">
               <packagedElement xmi:type="uml:Package" xmi:id="_2nhmEADNEemgbNU2uOuYPg" name="implementation">
-                <packagedElement xmi:type="uml:Class" xmi:id="_7uRdcADNEemgbNU2uOuYPg" name="StateAscenseur">
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_aBmFcADjEemgbNU2uOuYPg" name="metttreEnMarche">
+                <packagedElement xmi:type="uml:Class" xmi:id="_7uRdcADNEemgbNU2uOuYPg" name="StateAscenseur" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_aBmFcADjEemgbNU2uOuYPg" name="metttreEnMarche" isAbstract="true">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_aBmFcQDjEemgbNU2uOuYPg" name="sens" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     </ownedParameter>
                   </ownedOperation>
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_bs7l4ADjEemgbNU2uOuYPg" name="arreter"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_bs7l4ADjEemgbNU2uOuYPg" name="arreter" isAbstract="true"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_n_HqQAElEem2kY4lLQzkFg" name="StateAscenseurRepos">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_y-x1wAElEem2kY4lLQzkFg" name="mettreEnMarche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_y-x1wQElEem2kY4lLQzkFg" name="sens">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_5O5I8AElEem2kY4lLQzkFg" name="arreter"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="__W6QEAElEem2kY4lLQzkFg" name="StateAscenseurDeplacement">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="__W6QEQElEem2kY4lLQzkFg" name="mettreEnMarche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__W6QEgElEem2kY4lLQzkFg" name="sens"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="__W6QEwElEem2kY4lLQzkFg" name="arreter"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_FMHv8AEmEem2kY4lLQzkFg" name="StateAscenseurTransitoire">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_FMHv8QEmEem2kY4lLQzkFg" name="mettreEnMarche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_FMHv8gEmEem2kY4lLQzkFg" name="sens"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_FMHv8wEmEem2kY4lLQzkFg" name="arreter"/>
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_4NF1sADNEemgbNU2uOuYPg" name="interface"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_FRUkMADSEemgbNU2uOuYPg" name="stateMoteur">
               <packagedElement xmi:type="uml:Package" xmi:id="_GfzJgADSEemgbNU2uOuYPg" name="implementation">
-                <packagedElement xmi:type="uml:Class" xmi:id="_LSzlgADSEemgbNU2uOuYPg" name="StateMoteur">
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_TVDIMADTEemgbNU2uOuYPg" name="demarrer">
+                <packagedElement xmi:type="uml:Class" xmi:id="_LSzlgADSEemgbNU2uOuYPg" name="StateMoteur" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_TVDIMADTEemgbNU2uOuYPg" name="demarrer" isAbstract="true">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_TVDIMQDTEemgbNU2uOuYPg" name="sensDeplacement" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     </ownedParameter>
                   </ownedOperation>
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_aZLSQADTEemgbNU2uOuYPg" name="arreter"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_aZLSQADTEemgbNU2uOuYPg" name="arreter" isAbstract="true"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_KWcfwAEmEem2kY4lLQzkFg" name="StateMoteurMarche">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_KWcfwQEmEem2kY4lLQzkFg" name="demarrer">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_KWcfwgEmEem2kY4lLQzkFg" name="sensDeplacement" effect="read"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_KWcfwwEmEem2kY4lLQzkFg" name="arreter"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_QnpYEAEmEem2kY4lLQzkFg" name="StateMoteurArret">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_QnpYEQEmEem2kY4lLQzkFg" name="demarrer">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_QnpYEgEmEem2kY4lLQzkFg" name="sensDeplacement" effect="read"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_QnpYEwEmEem2kY4lLQzkFg" name="arreter"/>
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_Htqq0ADSEemgbNU2uOuYPg" name="interface"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_3U-dwADUEemgbNU2uOuYPg" name="stateCabine">
               <packagedElement xmi:type="uml:Package" xmi:id="_5-CKsADUEemgbNU2uOuYPg" name="implementation">
-                <packagedElement xmi:type="uml:Class" xmi:id="_9ohfcADUEemgbNU2uOuYPg" name="StateCabine">
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_KCGEMADVEemgbNU2uOuYPg" name="mettreEnMouvement">
+                <packagedElement xmi:type="uml:Class" xmi:id="_9ohfcADUEemgbNU2uOuYPg" name="StateCabine" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_KCGEMADVEemgbNU2uOuYPg" name="mettreEnMouvement" isAbstract="true">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_KCGEMQDVEemgbNU2uOuYPg" name="vitesse" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
                     </ownedParameter>
                   </ownedOperation>
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_NWFkgADVEemgbNU2uOuYPg" name="arreterMouvement"/>
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_Qqt-AADVEemgbNU2uOuYPg" name="ouvrirCabine"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_NWFkgADVEemgbNU2uOuYPg" name="arreterMouvement" isAbstract="true"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_Qqt-AADVEemgbNU2uOuYPg" name="ouvrirCabine" isAbstract="true"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_V5tHkAEmEem2kY4lLQzkFg" name="StateCabineOuverte">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_V5tHkQEmEem2kY4lLQzkFg" name="mettreEnMouvement">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_V5tHkgEmEem2kY4lLQzkFg" name="vitesse" effect="read"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_V5tHkwEmEem2kY4lLQzkFg" name="arreterMouvement"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_V5tHlAEmEem2kY4lLQzkFg" name="ouvrirCabine"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_b6rykAEmEem2kY4lLQzkFg" name="StateCabineFermee">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_b6rykQEmEem2kY4lLQzkFg" name="mettreEnMouvement">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_b6rykgEmEem2kY4lLQzkFg" name="vitesse" effect="read"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_b6rykwEmEem2kY4lLQzkFg" name="arreterMouvement"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_b6rylAEmEem2kY4lLQzkFg" name="ouvrirCabine"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_dU2qgAEmEem2kY4lLQzkFg" name="StateCabineMoving">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_dU2qgQEmEem2kY4lLQzkFg" name="mettreEnMouvement">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_dU2qggEmEem2kY4lLQzkFg" name="vitesse" effect="read"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_dU2qgwEmEem2kY4lLQzkFg" name="arreterMouvement"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_dU2qhAEmEem2kY4lLQzkFg" name="ouvrirCabine"/>
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_7i_9YADUEemgbNU2uOuYPg" name="interface"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_-5qhwADVEemgbNU2uOuYPg" name="stateCapteur">
               <packagedElement xmi:type="uml:Package" xmi:id="_AWpdIADWEemgbNU2uOuYPg" name="implementation">
-                <packagedElement xmi:type="uml:Class" xmi:id="_D4ZFkADWEemgbNU2uOuYPg" name="StateCapteur">
-                  <ownedOperation xmi:type="uml:Operation" xmi:id="_fntFQADWEemgbNU2uOuYPg" name="detecter">
+                <packagedElement xmi:type="uml:Class" xmi:id="_D4ZFkADWEemgbNU2uOuYPg" name="StateCapteur" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_fntFQADWEemgbNU2uOuYPg" name="detecter" isAbstract="true">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_fntFQQDWEemgbNU2uOuYPg" name="detected" direction="return">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
                     </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_l2FEsAEmEem2kY4lLQzkFg" name="StateCapteurDetection" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_l2FEsQEmEem2kY4lLQzkFg" name="detecter" isAbstract="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_l2FEsgEmEem2kY4lLQzkFg" name="detected" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_nY2fAAEmEem2kY4lLQzkFg" name="StateCapteurNonDetection" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_nY2fAQEmEem2kY4lLQzkFg" name="detecter" isAbstract="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_nY2fAgEmEem2kY4lLQzkFg" name="detected" direction="return"/>
                   </ownedOperation>
                 </packagedElement>
               </packagedElement>
