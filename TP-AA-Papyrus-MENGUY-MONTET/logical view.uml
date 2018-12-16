@@ -3,4 +3,65 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_UVknUODlEeigVfOfDjzqgw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_6e4O8ADJEemgbNU2uOuYPg" name="fr">
+    <packagedElement xmi:type="uml:Package" xmi:id="_7_DoQADJEemgbNU2uOuYPg" name="univ-avignon">
+      <packagedElement xmi:type="uml:Package" xmi:id="_9a234ADJEemgbNU2uOuYPg" name="m1ilsen">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-qM_4ADJEemgbNU2uOuYPg" name="aa">
+          <packagedElement xmi:type="uml:Package" xmi:id="__6zsIADJEemgbNU2uOuYPg" name="elevSimMgr">
+            <packagedElement xmi:type="uml:Package" xmi:id="_DZNFoADKEemgbNU2uOuYPg" name="ascenseur">
+              <packagedElement xmi:type="uml:Package" xmi:id="_HJrtoADKEemgbNU2uOuYPg" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_R4XWgADNEemgbNU2uOuYPg" name="Ascenseur">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_BtNhEADOEemgbNU2uOuYPg" name="etat" visibility="private" type="_7uRdcADNEemgbNU2uOuYPg"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_Ogph4ADPEemgbNU2uOuYPg" name="position" visibility="private">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_2Ao6UADPEemgbNU2uOuYPg" name="sensDeplacement" visibility="private">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedAttribute>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_JWXnoADKEemgbNU2uOuYPg" name="interface"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_MHqDgADKEemgbNU2uOuYPg" name="moteur">
+              <packagedElement xmi:type="uml:Package" xmi:id="_NTztkADKEemgbNU2uOuYPg" name="interface"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_Oo208ADKEemgbNU2uOuYPg" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_9lBRwADPEemgbNU2uOuYPg" name="Moteur">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_BIbcMADSEemgbNU2uOuYPg" name="vitesse" visibility="private">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_XlqeQADSEemgbNU2uOuYPg" name="etat" visibility="private" type="_LSzlgADSEemgbNU2uOuYPg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_n00fYADQEemgbNU2uOuYPg" name="marche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_n00fYQDQEemgbNU2uOuYPg" name="sensDeplacement" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_7RrrQADREemgbNU2uOuYPg" name="arret"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_QnKUsADKEemgbNU2uOuYPg" name="cabine">
+              <packagedElement xmi:type="uml:Package" xmi:id="_RyiisADKEemgbNU2uOuYPg" name="interface"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_aH0LkADKEemgbNU2uOuYPg" name="implementation"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_bqFPkADKEemgbNU2uOuYPg" name="capteur">
+              <packagedElement xmi:type="uml:Package" xmi:id="_eRTwgADKEemgbNU2uOuYPg" name="interface"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ffXfEADKEemgbNU2uOuYPg" name="implementation"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_yEMk0ADNEemgbNU2uOuYPg" name="stateAscenseur">
+              <packagedElement xmi:type="uml:Package" xmi:id="_2nhmEADNEemgbNU2uOuYPg" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_7uRdcADNEemgbNU2uOuYPg" name="StateAscenseur"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_4NF1sADNEemgbNU2uOuYPg" name="interface"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_FRUkMADSEemgbNU2uOuYPg" name="stateMoteur">
+              <packagedElement xmi:type="uml:Package" xmi:id="_GfzJgADSEemgbNU2uOuYPg" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_LSzlgADSEemgbNU2uOuYPg" name="StateMoteur"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_Htqq0ADSEemgbNU2uOuYPg" name="interface"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
 </uml:Model>
