@@ -2426,6 +2426,24 @@
       <element xmi:type="uml:UseCase" href="use%20case%20view.uml#_2EZ2cADDEemgbNU2uOuYPg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2EadgQDDEemgbNU2uOuYPg" x="260" y="420"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_d_GOcAEzEemTGYdFgmMCfQ" type="UseCase_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_d_Kf4AEzEemTGYdFgmMCfQ" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_d_Kf4QEzEemTGYdFgmMCfQ" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d_Kf4gEzEemTGYdFgmMCfQ" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_d_Kf4wEzEemTGYdFgmMCfQ" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_d_Kf5AEzEemTGYdFgmMCfQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_d_Kf5QEzEemTGYdFgmMCfQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_Kf5gEzEemTGYdFgmMCfQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="use%20case%20view.uml#_d-6oQAEzEemTGYdFgmMCfQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_GOcQEzEemTGYdFgmMCfQ" x="540" y="380"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_pNuqEAEzEemTGYdFgmMCfQ" type="Comment_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_pNuqEgEzEemTGYdFgmMCfQ" type="Comment_BodyLabel"/>
+      <element xmi:type="uml:Comment" href="use%20case%20view.uml#_pNojcAEzEemTGYdFgmMCfQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pNuqEQEzEemTGYdFgmMCfQ" x="340" y="320" height="21"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_0rydsQDDEemgbNU2uOuYPg" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_0rydsgDDEemgbNU2uOuYPg"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_0rydswDDEemgbNU2uOuYPg" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
@@ -2446,6 +2464,28 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_40mtMgDDEemgbNU2uOuYPg" points="[147, 460, -643984, -643984]$[260, 450, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_40q-oADDEemgbNU2uOuYPg" id="(1.0,0.72)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_40q-oQDDEemgbNU2uOuYPg" id="(0.0,0.5)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_m9DA4AEzEemTGYdFgmMCfQ" type="Extend_Edge" source="_d_GOcAEzEemTGYdFgmMCfQ" target="_2EadgADDEemgbNU2uOuYPg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_m9DA4wEzEemTGYdFgmMCfQ" type="Extend_KeywordLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_3WIvMAEzEemTGYdFgmMCfQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m9DA5AEzEemTGYdFgmMCfQ" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m9DA5QEzEemTGYdFgmMCfQ" type="Extend_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_3YgtwAEzEemTGYdFgmMCfQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m9DA5gEzEemTGYdFgmMCfQ" x="1" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_m9DA4QEzEemTGYdFgmMCfQ"/>
+      <element xmi:type="uml:Extend" href="use%20case%20view.uml#_m8zJQAEzEemTGYdFgmMCfQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_m9DA4gEzEemTGYdFgmMCfQ" points="[540, 430, -643984, -643984]$[421, 440, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m9fFwAEzEemTGYdFgmMCfQ" id="(0.0,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m9fFwQEzEemTGYdFgmMCfQ" id="(1.0,0.3333333333333333)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_2SgvAAEzEemTGYdFgmMCfQ" type="Comment_AnnotatedElementEdge" source="_pNuqEAEzEemTGYdFgmMCfQ" target="_m9DA4AEzEemTGYdFgmMCfQ">
+      <styles xmi:type="notation:FontStyle" xmi:id="_2SgvAQEzEemTGYdFgmMCfQ"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2SgvAgEzEemTGYdFgmMCfQ" points="[440, 278, -643984, -643984]$[483, 350, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2XOP4AEzEemTGYdFgmMCfQ" id="(0.546448087431694,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2XOP4QEzEemTGYdFgmMCfQ" id="(0.5136986301369864,1.0)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

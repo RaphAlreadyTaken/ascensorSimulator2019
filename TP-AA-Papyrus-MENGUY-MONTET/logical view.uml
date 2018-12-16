@@ -20,12 +20,14 @@
                   </ownedAttribute>
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_ZriW4ADYEemgbNU2uOuYPg" name="engine" visibility="private" type="_9lBRwADPEemgbNU2uOuYPg"/>
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_dKrXQADYEemgbNU2uOuYPg" name="cabin" visibility="private" type="_1Xak4ADUEemgbNU2uOuYPg"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_5089MAFCEemTGYdFgmMCfQ" name="observer" visibility="private" type="_dowpsAFBEemTGYdFgmMCfQ"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_ClwGEADjEemgbNU2uOuYPg" name="marche">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_ClwGEQDjEemgbNU2uOuYPg" name="sens" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     </ownedParameter>
                   </ownedOperation>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_GjGscADjEemgbNU2uOuYPg" name="arretNiveau"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_u33IEAFDEemTGYdFgmMCfQ" name="notifyObserver"/>
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_JWXnoADKEemgbNU2uOuYPg" name="interface"/>
@@ -40,6 +42,7 @@
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
                   </ownedAttribute>
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_XlqeQADSEemgbNU2uOuYPg" name="etat" visibility="private" type="_LSzlgADSEemgbNU2uOuYPg"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_4s894AFDEemTGYdFgmMCfQ" name="observer" visibility="private" type="_ieoMcAFBEemTGYdFgmMCfQ"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_n00fYADQEemgbNU2uOuYPg" name="marche">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_n00fYQDQEemgbNU2uOuYPg" name="sensDeplacement" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -49,6 +52,7 @@
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_ptiXsADUEemgbNU2uOuYPg" name="setState">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_ptiXsQDUEemgbNU2uOuYPg" name="etat" type="_LSzlgADSEemgbNU2uOuYPg"/>
                   </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_4tGu4AFDEemTGYdFgmMCfQ" name="notifyObserver"/>
                 </packagedElement>
               </packagedElement>
             </packagedElement>
@@ -60,6 +64,7 @@
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_1yTUoADVEemgbNU2uOuYPg" name="position" visibility="private">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
                   </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B9O2cAFEEemTGYdFgmMCfQ" name="observer" visibility="private" type="_fBbs0AFBEemTGYdFgmMCfQ"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_Xq0jsADVEemgbNU2uOuYPg" name="fermerCabine"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_oX7aMADVEemgbNU2uOuYPg" name="ouvrirCabine"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_szjQ8ADVEemgbNU2uOuYPg" name="mettreEnMouvement">
@@ -71,6 +76,7 @@
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_5oe8AADVEemgbNU2uOuYPg" name="setState">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_5oe8AQDVEemgbNU2uOuYPg" name="etat" type="_9ohfcADUEemgbNU2uOuYPg" effect="read"/>
                   </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B9VkIAFEEemTGYdFgmMCfQ" name="notifyObserver"/>
                 </packagedElement>
               </packagedElement>
             </packagedElement>
@@ -82,9 +88,11 @@
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_HSEsQADYEemgbNU2uOuYPg" name="position" visibility="private">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
                   </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_IZz4UAFEEemTGYdFgmMCfQ" name="observer" visibility="private" type="_hB5IsAFBEemTGYdFgmMCfQ"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_-FSCAADWEemgbNU2uOuYPg" name="setState">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_-FSCAQDWEemgbNU2uOuYPg" name="etat" type="_D4ZFkADWEemgbNU2uOuYPg" effect="read"/>
                   </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_IZ9pUAFEEemTGYdFgmMCfQ" name="notifyObserver"/>
                 </packagedElement>
               </packagedElement>
             </packagedElement>
@@ -243,6 +251,131 @@ Ces méthodes ont été ajoutées (vides) dans la classe afin de faire apparaît
                   </ownedOperation>
                 </packagedElement>
               </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Ybx7YAEpEemTGYdFgmMCfQ" name="simulationMenu">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Ybx7YQEpEemTGYdFgmMCfQ" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_U-Lu8AEwEemTGYdFgmMCfQ" name="simulationMainMenu">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_fOI70AEwEemTGYdFgmMCfQ" name="configurerSimulation"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_h8XcoAEwEemTGYdFgmMCfQ" name="executerSimulation"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_mUcQIAEwEemTGYdFgmMCfQ" name="evaluerSimulation"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_BxQ00AE1EemTGYdFgmMCfQ" name="configurationMenu">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_MsPUoAE1EemTGYdFgmMCfQ" name="implementation">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_vDP2gAE0EemTGYdFgmMCfQ" name="configurationMenu">
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_vDP2gQE0EemTGYdFgmMCfQ" name="gererAlgo"/>
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_vDP2ggE0EemTGYdFgmMCfQ" name="gererScenario"/>
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_vDP2gwE0EemTGYdFgmMCfQ" name="gererModeExec"/>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Package" xmi:id="_kO208AE2EemTGYdFgmMCfQ" name="algoMenu">
+                      <packagedElement xmi:type="uml:Package" xmi:id="_peosgAE2EemTGYdFgmMCfQ" name="implementation">
+                        <packagedElement xmi:type="uml:Class" xmi:id="_zxKegAExEemTGYdFgmMCfQ" name="configurationAlgoMenu">
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_zxKegQExEemTGYdFgmMCfQ" name="insererAlgo"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_zxKeggExEemTGYdFgmMCfQ" name="modifierAlgo"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_zxKegwExEemTGYdFgmMCfQ" name="supprimerAlgo"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_CJ764AEyEemTGYdFgmMCfQ" name="chargerAlgo"/>
+                        </packagedElement>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Package" xmi:id="_qlGlUAE2EemTGYdFgmMCfQ" name="interface"/>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Package" xmi:id="_lirNQAE2EemTGYdFgmMCfQ" name="scenarioMenu">
+                      <packagedElement xmi:type="uml:Package" xmi:id="_rUzj8AE2EemTGYdFgmMCfQ" name="implementation">
+                        <packagedElement xmi:type="uml:Class" xmi:id="_q5YwEAEyEemTGYdFgmMCfQ" name="configurationScenarioMenu">
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_q5YwEQEyEemTGYdFgmMCfQ" name="creerScenario"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_q5YwEgEyEemTGYdFgmMCfQ" name="modifierScenario"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_q5YwEwEyEemTGYdFgmMCfQ" name="supprimerScenario"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_Kp2RAAEzEemTGYdFgmMCfQ" name="chargerScenario"/>
+                        </packagedElement>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Package" xmi:id="_rUzj8QE2EemTGYdFgmMCfQ" name="interface"/>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Package" xmi:id="_luNu4AE2EemTGYdFgmMCfQ" name="modeExecMenu">
+                      <packagedElement xmi:type="uml:Package" xmi:id="_rfGvcAE2EemTGYdFgmMCfQ" name="implementation">
+                        <packagedElement xmi:type="uml:Class" xmi:id="_XhKPwAE1EemTGYdFgmMCfQ" name="configurationModeExec">
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_XhKPwQE1EemTGYdFgmMCfQ" name="choixModeExec"/>
+                        </packagedElement>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Package" xmi:id="_rfGvcQE2EemTGYdFgmMCfQ" name="interface"/>
+                    </packagedElement>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_NxBLYAE1EemTGYdFgmMCfQ" name="interface"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_1NaAwAE2EemTGYdFgmMCfQ" name="executionMenu">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_6QC0MAE2EemTGYdFgmMCfQ" name="implementation">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_6QC0MQE2EemTGYdFgmMCfQ" name="executionMenu">
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0MgE2EemTGYdFgmMCfQ" name="gererSimulation"/>
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0MwE2EemTGYdFgmMCfQ" name="interagirSimulation"/>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Package" xmi:id="_6QC0NQE2EemTGYdFgmMCfQ" name="gestionMenu">
+                      <packagedElement xmi:type="uml:Package" xmi:id="_6QC0NgE2EemTGYdFgmMCfQ" name="implementation">
+                        <packagedElement xmi:type="uml:Class" xmi:id="_6QC0NwE2EemTGYdFgmMCfQ" name="gestionSimuMenu">
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0OAE2EemTGYdFgmMCfQ" name="choisirModeLancement"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_1EEMoAE4EemTGYdFgmMCfQ" name="mettreEnPause"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_1JFPgAE4EemTGYdFgmMCfQ" name="reprendre"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_1NpmcAE4EemTGYdFgmMCfQ" name="arreter"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_17RvMAE9EemTGYdFgmMCfQ" name="lancer"/>
+                        </packagedElement>
+                        <packagedElement xmi:type="uml:Package" xmi:id="_giQqkAE6EemTGYdFgmMCfQ" name="modeLancementMenu">
+                          <packagedElement xmi:type="uml:Package" xmi:id="_ifelMAE6EemTGYdFgmMCfQ" name="implementation">
+                            <packagedElement xmi:type="uml:Class" xmi:id="_ifelMQE6EemTGYdFgmMCfQ" name="modeLancementMenu">
+                              <ownedOperation xmi:type="uml:Operation" xmi:id="_ifelMgE6EemTGYdFgmMCfQ" name="choisirMode"/>
+                              <ownedOperation xmi:type="uml:Operation" xmi:id="_ifelMwE6EemTGYdFgmMCfQ" name="choisirVitesseExecution"/>
+                            </packagedElement>
+                          </packagedElement>
+                          <packagedElement xmi:type="uml:Package" xmi:id="_ifelNwE6EemTGYdFgmMCfQ" name="interface"/>
+                        </packagedElement>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Package" xmi:id="_6QC0PAE2EemTGYdFgmMCfQ" name="interface"/>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Package" xmi:id="_6QC0PQE2EemTGYdFgmMCfQ" name="interactionMenu">
+                      <packagedElement xmi:type="uml:Package" xmi:id="_6QC0PgE2EemTGYdFgmMCfQ" name="implementation">
+                        <packagedElement xmi:type="uml:Class" xmi:id="_6QC0PwE2EemTGYdFgmMCfQ" name="interactionSimuMenu">
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QAE2EemTGYdFgmMCfQ" name="faireMonterAscenseur"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QQE2EemTGYdFgmMCfQ" name="faireDescendreAscenseur"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QgE2EemTGYdFgmMCfQ" name="choisirEtage"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QwE2EemTGYdFgmMCfQ" name="arreterAscenseur"/>
+                        </packagedElement>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Package" xmi:id="_6QC0RAE2EemTGYdFgmMCfQ" name="interface"/>
+                    </packagedElement>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_6QC0SgE2EemTGYdFgmMCfQ" name="interface"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_05zA4AE5EemTGYdFgmMCfQ" name="evaluationMenu">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_05zA4QE5EemTGYdFgmMCfQ" name="implementation">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_05zA4gE5EemTGYdFgmMCfQ" name="evaluationMenu">
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_05zA4wE5EemTGYdFgmMCfQ" name="observerResultat"/>
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_05zA5AE5EemTGYdFgmMCfQ" name="sauvegarderResultat"/>
+                      <ownedOperation xmi:type="uml:Operation" xmi:id="_JbJlEAE6EemTGYdFgmMCfQ" name="comparerResultats"/>
+                    </packagedElement>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_05zA9QE5EemTGYdFgmMCfQ" name="interface"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_Ybx7awEpEemTGYdFgmMCfQ" name="interface"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Q7dQoAFBEemTGYdFgmMCfQ" name="observer">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Q7dQoQFBEemTGYdFgmMCfQ" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_TkcFEAFBEemTGYdFgmMCfQ" name="Observer" isAbstract="true">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ZopDMAFBEemTGYdFgmMCfQ" name="update" isAbstract="true"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_dowpsAFBEemTGYdFgmMCfQ" name="ObserverAscenseur">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_0LwDkAFDEemTGYdFgmMCfQ" name="elevator" type="_R4XWgADNEemgbNU2uOuYPg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_dowpsQFBEemTGYdFgmMCfQ" name="update"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_fBbs0AFBEemTGYdFgmMCfQ" name="ObserverCabine">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_HG7UIAFEEemTGYdFgmMCfQ" name="cabin" type="_1Xak4ADUEemgbNU2uOuYPg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_fBbs0QFBEemTGYdFgmMCfQ" name="update"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_hB5IsAFBEemTGYdFgmMCfQ" name="ObserverCapteur">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_N2oGUAFEEemTGYdFgmMCfQ" name="sensor" type="_kIAnsADWEemgbNU2uOuYPg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_hB5IsQFBEemTGYdFgmMCfQ" name="update"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ieoMcAFBEemTGYdFgmMCfQ" name="ObserverMoteur">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ASFjQAFEEemTGYdFgmMCfQ" name="engine" type="_9lBRwADPEemgbNU2uOuYPg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ieoMcQFBEemTGYdFgmMCfQ" name="update"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_Q7dQqwFBEemTGYdFgmMCfQ" name="interface"/>
             </packagedElement>
           </packagedElement>
         </packagedElement>

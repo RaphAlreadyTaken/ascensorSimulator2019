@@ -354,7 +354,7 @@ Dans cette partie, l'utilisateur choisira quel le scénario qu'il souhaitera éx
                   <packagedElement xmi:type="uml:Package" xmi:id="__wfWsADCEemgbNU2uOuYPg" name="scenarioUseCase">
                     <packagedElement xmi:type="uml:Actor" xmi:id="_JbljAADDEemgbNU2uOuYPg" name="Tester"/>
                     <packagedElement xmi:type="uml:UseCase" xmi:id="_LAoOMADDEemgbNU2uOuYPg" name="Créer scénario"/>
-                    <packagedElement xmi:type="uml:UseCase" xmi:id="_MX3G4ADDEemgbNU2uOuYPg" name="Modfier scénario"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_MX3G4ADDEemgbNU2uOuYPg" name="Modifier scénario"/>
                     <packagedElement xmi:type="uml:UseCase" xmi:id="_PcYn0ADDEemgbNU2uOuYPg" name="Supprimer scénario"/>
                     <packagedElement xmi:type="uml:UseCase" xmi:id="_Rgso8ADDEemgbNU2uOuYPg" name="Charger scénario"/>
                     <packagedElement xmi:type="uml:Association" xmi:id="_Tr-NsADDEemgbNU2uOuYPg"/>
@@ -394,9 +394,18 @@ Ceci permettra à l'utilisateur de choisir le mode d'éxecution de la simulation
  - Mode automatique: necessite le chargement d'un scénario. Celui-ci execute le scénario choisi </body>
                   </ownedComment>
                   <packagedElement xmi:type="uml:Package" xmi:id="_yLfrMADDEemgbNU2uOuYPg" name="executionUseCase">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_pNojcAEzEemTGYdFgmMCfQ" annotatedElement="_m8zJQAEzEemTGYdFgmMCfQ">
+                      <body>Condition: mode automatique&#xD;
+</body>
+                    </ownedComment>
                     <packagedElement xmi:type="uml:Actor" xmi:id="_1QBMIADDEemgbNU2uOuYPg" name="Tester"/>
-                    <packagedElement xmi:type="uml:UseCase" xmi:id="_2EZ2cADDEemgbNU2uOuYPg" name="Choisir mode d'execution"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_2EZ2cADDEemgbNU2uOuYPg" name="Choisir mode d'execution">
+                      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_m8zJQQEzEemTGYdFgmMCfQ" name="ExtensionPoint1"/>
+                    </packagedElement>
                     <packagedElement xmi:type="uml:Association" xmi:id="_40mGIADDEemgbNU2uOuYPg"/>
+                    <packagedElement xmi:type="uml:UseCase" xmi:id="_d-6oQAEzEemTGYdFgmMCfQ" name="Charger scénario">
+                      <extend xmi:type="uml:Extend" xmi:id="_m8zJQAEzEemTGYdFgmMCfQ" extendedCase="_2EZ2cADDEemgbNU2uOuYPg" extensionLocation="_m8zJQQEzEemTGYdFgmMCfQ"/>
+                    </packagedElement>
                   </packagedElement>
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_M0bDsACaEemgbNU2uOuYPg" name="configurationUseCase">
@@ -456,7 +465,7 @@ Permettra également de mettre en pause la simulation (et ainsi de pouvoir la re
                 </packagedElement>
                 <packagedElement xmi:type="uml:Package" xmi:id="_emQtoACaEemgbNU2uOuYPg" name="simulationUseCase">
                   <packagedElement xmi:type="uml:Actor" xmi:id="_kdPIEACaEemgbNU2uOuYPg" name="Tester"/>
-                  <packagedElement xmi:type="uml:UseCase" xmi:id="_kybU8ACaEemgbNU2uOuYPg" name="Intéragir avec la simulation"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_kybU8ACaEemgbNU2uOuYPg" name="Interagir avec la simulation"/>
                   <packagedElement xmi:type="uml:UseCase" xmi:id="_lDnLkACaEemgbNU2uOuYPg" name="Gérer la simulation"/>
                   <packagedElement xmi:type="uml:Association" xmi:id="_slBHgACaEemgbNU2uOuYPg"/>
                   <packagedElement xmi:type="uml:Association" xmi:id="_tnkwsACaEemgbNU2uOuYPg"/>
