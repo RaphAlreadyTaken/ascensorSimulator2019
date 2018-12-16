@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_USI40ODlEeigVfOfDjzqgw" name="logical view">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_UVknUODlEeigVfOfDjzqgw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -20,6 +20,12 @@
                   </ownedAttribute>
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_ZriW4ADYEemgbNU2uOuYPg" name="engine" visibility="private" type="_9lBRwADPEemgbNU2uOuYPg"/>
                   <ownedAttribute xmi:type="uml:Property" xmi:id="_dKrXQADYEemgbNU2uOuYPg" name="cabin" visibility="private" type="_1Xak4ADUEemgbNU2uOuYPg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ClwGEADjEemgbNU2uOuYPg" name="marche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ClwGEQDjEemgbNU2uOuYPg" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_GjGscADjEemgbNU2uOuYPg" name="arretNiveau"/>
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_JWXnoADKEemgbNU2uOuYPg" name="interface"/>
@@ -84,7 +90,14 @@
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_yEMk0ADNEemgbNU2uOuYPg" name="stateAscenseur">
               <packagedElement xmi:type="uml:Package" xmi:id="_2nhmEADNEemgbNU2uOuYPg" name="implementation">
-                <packagedElement xmi:type="uml:Class" xmi:id="_7uRdcADNEemgbNU2uOuYPg" name="StateAscenseur"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_7uRdcADNEemgbNU2uOuYPg" name="StateAscenseur">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_aBmFcADjEemgbNU2uOuYPg" name="metttreEnMarche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_aBmFcQDjEemgbNU2uOuYPg" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_bs7l4ADjEemgbNU2uOuYPg" name="arreter"/>
+                </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_4NF1sADNEemgbNU2uOuYPg" name="interface"/>
             </packagedElement>
@@ -126,6 +139,28 @@
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_C1gFMADWEemgbNU2uOuYPg" name="interface"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_qMwsgADjEemgbNU2uOuYPg" name="systemeControle">
+              <packagedElement xmi:type="uml:Package" xmi:id="_qMwsgQDjEemgbNU2uOuYPg" name="implementation">
+                <packagedElement xmi:type="uml:Class" xmi:id="_uztpgADjEemgbNU2uOuYPg" name="SystemeControle"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_qMwshQDjEemgbNU2uOuYPg" name="interface">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_woGYQADjEemgbNU2uOuYPg" name="InterfaceSystemeControle">
+                  <ownedReception xmi:type="uml:Reception" xmi:id="__shZsADjEemgbNU2uOuYPg" name="moveAscenseurFromOutside">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__shZsQDjEemgbNU2uOuYPg" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__shZsgDjEemgbNU2uOuYPg" name="niveau" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                    </ownedParameter>
+                  </ownedReception>
+                  <ownedReception xmi:type="uml:Reception" xmi:id="_D_BJoADkEemgbNU2uOuYPg" name="moveAscenseurFromCabine">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_D_BJoQDkEemgbNU2uOuYPg" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedReception>
+                </packagedElement>
+              </packagedElement>
             </packagedElement>
           </packagedElement>
         </packagedElement>
