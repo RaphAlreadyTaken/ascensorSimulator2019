@@ -142,23 +142,42 @@
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_qMwsgADjEemgbNU2uOuYPg" name="systemeControle">
               <packagedElement xmi:type="uml:Package" xmi:id="_qMwsgQDjEemgbNU2uOuYPg" name="implementation">
-                <packagedElement xmi:type="uml:Class" xmi:id="_uztpgADjEemgbNU2uOuYPg" name="SystemeControle"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_uztpgADjEemgbNU2uOuYPg" name="SystemeControle">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_yUTJcADlEemgbNU2uOuYPg" annotatedElement="_uztpgADjEemgbNU2uOuYPg">
+                    <body>Cette classe est alimentée par l'algorithme inséré dans la simulation.&#xD;
+L'algorithme contient le corps des 2 méthodes implémentant l'interface.&#xD;
+Ces méthodes ont été ajoutées (vides) dans la classe afin de faire apparaître la structure de la modélisation. </body>
+                  </ownedComment>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_Dz_v8ADlEemgbNU2uOuYPg" name="moveAscenseurFromOutside">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dz_v8QDlEemgbNU2uOuYPg" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dz_v8gDlEemgbNU2uOuYPg" name="position" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EG1zcADlEemgbNU2uOuYPg" name="moveAscenseurFromCabine">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EG1zcQDlEemgbNU2uOuYPg" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_qMwshQDjEemgbNU2uOuYPg" name="interface">
                 <packagedElement xmi:type="uml:Interface" xmi:id="_woGYQADjEemgbNU2uOuYPg" name="InterfaceSystemeControle">
-                  <ownedReception xmi:type="uml:Reception" xmi:id="__shZsADjEemgbNU2uOuYPg" name="moveAscenseurFromOutside">
-                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__shZsQDjEemgbNU2uOuYPg" name="sens" effect="read">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_7udzQADkEemgbNU2uOuYPg" name="moveAscenseurFromOutside" isAbstract="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_7udzQQDkEemgbNU2uOuYPg" name="sens" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     </ownedParameter>
-                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__shZsgDjEemgbNU2uOuYPg" name="niveau" effect="read">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_7udzQgDkEemgbNU2uOuYPg" name="position" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
                     </ownedParameter>
-                  </ownedReception>
-                  <ownedReception xmi:type="uml:Reception" xmi:id="_D_BJoADkEemgbNU2uOuYPg" name="moveAscenseurFromCabine">
-                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_D_BJoQDkEemgbNU2uOuYPg" name="sens" effect="read">
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_CJeu4ADlEemgbNU2uOuYPg" name="moveAscenseurFromCabine" isAbstract="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_CJeu4QDlEemgbNU2uOuYPg" name="sens" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     </ownedParameter>
-                  </ownedReception>
+                  </ownedOperation>
                 </packagedElement>
               </packagedElement>
             </packagedElement>
