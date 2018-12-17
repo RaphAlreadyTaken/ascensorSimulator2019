@@ -37,6 +37,7 @@
                     <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FJmbQQGFEem5SpG03OYHiQ" value="1"/>
                     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FJmbQgGFEem5SpG03OYHiQ" value="1"/>
                   </ownedAttribute>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_u6EgMAGTEem5SpG03OYHiQ" client="_R4XWgADNEemgbNU2uOuYPg" supplier="_rr7JMAGTEem5SpG03OYHiQ" contract="_rr7JMAGTEem5SpG03OYHiQ"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_ClwGEADjEemgbNU2uOuYPg" name="marche">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_ClwGEQDjEemgbNU2uOuYPg" name="sens" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -49,7 +50,16 @@
                   </ownedOperation>
                 </packagedElement>
               </packagedElement>
-              <packagedElement xmi:type="uml:Package" xmi:id="_JWXnoADKEemgbNU2uOuYPg" name="interface"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_JWXnoADKEemgbNU2uOuYPg" name="interface">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_rr7JMAGTEem5SpG03OYHiQ" name="InterfaceAscenseur">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_x3J8YAGTEem5SpG03OYHiQ" name="marche">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_x3J8YQGTEem5SpG03OYHiQ" name="sens" effect="read">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_x3LKgAGTEem5SpG03OYHiQ" name="arretNiveau"/>
+                </packagedElement>
+              </packagedElement>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_MHqDgADKEemgbNU2uOuYPg" name="moteur">
               <packagedElement xmi:type="uml:Package" xmi:id="_NTztkADKEemgbNU2uOuYPg" name="interface">
@@ -278,6 +288,7 @@
 L'algorithme contient le corps des 2 méthodes implémentant l'interface.&#xD;
 Ces méthodes ont été ajoutées (vides) dans la classe afin de faire apparaître la structure de la modélisation. </body>
                   </ownedComment>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ioQwUAGTEem5SpG03OYHiQ" client="_uztpgADjEemgbNU2uOuYPg" supplier="_woGYQADjEemgbNU2uOuYPg" contract="_woGYQADjEemgbNU2uOuYPg"/>
                   <ownedOperation xmi:type="uml:Operation" xmi:id="_Dz_v8ADlEemgbNU2uOuYPg" name="moveAscenseurFromOutside">
                     <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dz_v8QDlEemgbNU2uOuYPg" name="sens" effect="read">
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -388,13 +399,21 @@ Ces méthodes ont été ajoutées (vides) dans la classe afin de faire apparaît
                     <packagedElement xmi:type="uml:Package" xmi:id="_6QC0PQE2EemTGYdFgmMCfQ" name="interactionMenu">
                       <packagedElement xmi:type="uml:Package" xmi:id="_6QC0PgE2EemTGYdFgmMCfQ" name="implementation">
                         <packagedElement xmi:type="uml:Class" xmi:id="_6QC0PwE2EemTGYdFgmMCfQ" name="interactionSimuMenu">
+                          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OebUQAGTEem5SpG03OYHiQ" client="_6QC0PwE2EemTGYdFgmMCfQ" supplier="_BYYEAAGTEem5SpG03OYHiQ" contract="_BYYEAAGTEem5SpG03OYHiQ"/>
                           <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QAE2EemTGYdFgmMCfQ" name="faireMonterAscenseur"/>
                           <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QQE2EemTGYdFgmMCfQ" name="faireDescendreAscenseur"/>
                           <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QgE2EemTGYdFgmMCfQ" name="choisirEtage"/>
                           <ownedOperation xmi:type="uml:Operation" xmi:id="_6QC0QwE2EemTGYdFgmMCfQ" name="arreterAscenseur"/>
                         </packagedElement>
                       </packagedElement>
-                      <packagedElement xmi:type="uml:Package" xmi:id="_6QC0RAE2EemTGYdFgmMCfQ" name="interface"/>
+                      <packagedElement xmi:type="uml:Package" xmi:id="_6QC0RAE2EemTGYdFgmMCfQ" name="interface">
+                        <packagedElement xmi:type="uml:Interface" xmi:id="_BYYEAAGTEem5SpG03OYHiQ" name="InterfaceSimuMenu">
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_GoWv4AGTEem5SpG03OYHiQ" name="faireMonterAscenseur"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_HuOLwAGTEem5SpG03OYHiQ" name="arreterAscenseur"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_HuOy0AGTEem5SpG03OYHiQ" name="choisirEtage"/>
+                          <ownedOperation xmi:type="uml:Operation" xmi:id="_HuPZ4AGTEem5SpG03OYHiQ" name="faireDescendreAscenseur"/>
+                        </packagedElement>
+                      </packagedElement>
                     </packagedElement>
                   </packagedElement>
                   <packagedElement xmi:type="uml:Package" xmi:id="_6QC0SgE2EemTGYdFgmMCfQ" name="interface"/>
@@ -566,6 +585,27 @@ Ces méthodes ont été ajoutées (vides) dans la classe afin de faire apparaît
                 </eAnnotations>
                 <ownedEnd xmi:type="uml:Property" xmi:id="_8dWYowGLEem5SpG03OYHiQ" name="configurationmenu" type="_vDP2gAE0EemTGYdFgmMCfQ" association="_8dWYoAGLEem5SpG03OYHiQ"/>
                 <ownedEnd xmi:type="uml:Property" xmi:id="_8dYN0AGLEem5SpG03OYHiQ" name="configurationmodeexec" type="_XhKPwAE1EemTGYdFgmMCfQ" association="_8dWYoAGLEem5SpG03OYHiQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_wawFQAGSEem5SpG03OYHiQ" memberEnd="_wawsUgGSEem5SpG03OYHiQ _waxTYAGSEem5SpG03OYHiQ">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wawsUAGSEem5SpG03OYHiQ" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wawsUQGSEem5SpG03OYHiQ" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_wawsUgGSEem5SpG03OYHiQ" name="fenetreexecution" type="_5uizkAGMEem5SpG03OYHiQ" association="_wawFQAGSEem5SpG03OYHiQ"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_waxTYAGSEem5SpG03OYHiQ" name="gestionsimumenu" type="_6QC0NwE2EemTGYdFgmMCfQ" association="_wawFQAGSEem5SpG03OYHiQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_ThWbkAGTEem5SpG03OYHiQ" memberEnd="_ThXCogGTEem5SpG03OYHiQ _ThXpsAGTEem5SpG03OYHiQ">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ThXCoAGTEem5SpG03OYHiQ" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ThXCoQGTEem5SpG03OYHiQ" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_ThXCogGTEem5SpG03OYHiQ" name="systemecontrole" type="_uztpgADjEemgbNU2uOuYPg" association="_ThWbkAGTEem5SpG03OYHiQ"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_ThXpsAGTEem5SpG03OYHiQ" name="interactionsimumenu" type="_6QC0PwE2EemTGYdFgmMCfQ" association="_ThWbkAGTEem5SpG03OYHiQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_1-KOAAGTEem5SpG03OYHiQ" memberEnd="_1-K1EgGTEem5SpG03OYHiQ _1-LcIAGTEem5SpG03OYHiQ">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1-K1EAGTEem5SpG03OYHiQ" source="org.eclipse.papyrus">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1-K1EQGTEem5SpG03OYHiQ" key="nature" value="UML_Nature"/>
+                </eAnnotations>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_1-K1EgGTEem5SpG03OYHiQ" name="systemecontrole" type="_uztpgADjEemgbNU2uOuYPg" association="_1-KOAAGTEem5SpG03OYHiQ"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="_1-LcIAGTEem5SpG03OYHiQ" name="ascenseur" type="_R4XWgADNEemgbNU2uOuYPg" association="_1-KOAAGTEem5SpG03OYHiQ"/>
               </packagedElement>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_2A1ywAGMEem5SpG03OYHiQ" name="fenetreExecution">
